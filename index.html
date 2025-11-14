@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Breyner Morales | Desarrollador Web</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- SEO básico -->
+<meta name="description" content="Breyner Morales, desarrollador web especializado en creación de sitios modernos, aplicaciones web y soluciones digitales.">
+<meta name="keywords" content="Breyner Morales, desarrollador web, programación, frontend, backend, páginas web, aplicaciones web">
+<meta name="author" content="Breyner Morales">
+
+<!-- Open Graph (Facebook, LinkedIn, etc.) -->
+<meta property="og:title" content="Breyner Morales | Desarrollador Web">
+<meta property="og:description" content="Crea soluciones web modernas y efectivas con Breyner Morales, desarrollador web profesional.">
+<meta property="og:image" content="https://tusitio.com/imagen-portada.jpg">
+<meta property="og:url" content="https://tusitio.com">
+<meta property="og:type" content="website">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Breyner Morales | Desarrollador Web">
+<meta name="twitter:description" content="Crea soluciones web modernas y efectivas con Breyner Morales, desarrollador web profesional.">
+<meta name="twitter:image" content="https://tusitio.com/imagen-portada.jpg">
+<meta name="twitter:site" content="@TuUsuarioTwitter">
+<meta name="twitter:creator" content="@TuUsuarioTwitter">
+
+<!-- Favicons -->
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+<style>
+/* Global */
+html { scroll-behavior: smooth; }
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif; }
+body { color: #fff; background: #0f0f0f; }
+a { color: inherit; text-decoration: none; }
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #0a75da00, #0077ff);
+    padding: 100px 20px 60px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+header h1 { font-size: 3em; margin-bottom: 20px; }
+header p { font-size: 1.3em; margin-bottom: 30px; }
+header .cta {
+    padding: 15px 30px;
+    background: #fff;
+    color: #0a74da;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: transform 0.3s, background 0.3s;
+}
+header .cta:hover { transform: scale(1.05); background: #e0e0e0; }
+
+/* Hero Image */
+.hero-img {
+    position: absolute;
+    right: 0; bottom: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+
+/* Sections */
+section { padding: 80px 20px; max-width: 1200px; margin: 0 auto; }
+h2 { text-align: center; color: #ffffff; margin-bottom: 50px; font-size: 2.5em; }
+
+/* Cards */
+.services, .packages { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+.card {
+    background: #1a1a1a;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover { transform: translateY(-10px) scale(1.05); box-shadow: 0 15px 35px rgba(0,195,255,0.5); }
+.card img { width: 100%; height: 180px; object-fit: cover; display: block; }
+.card-content { padding: 20px; text-align: center; }
+.card-content h3 { margin-bottom: 15px; color: #00c3ff; font-size: 1.5em; }
+.card-content p { margin-bottom: 15px; color: #ccc; font-size: 1em; }
+.card-content span { font-weight: bold; font-size: 1.1em; color: #fff; }
+
+/* Contact */
+.contact { background: #0a74da; color: #fff; text-align: center; }
+.contact form { max-width: 500px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px; }
+.contact input, .contact textarea { padding: 15px; border: none; border-radius: 10px; font-size: 1em; }
+.contact button {
+    padding: 15px;
+    background: #fff;
+    color: #0a74da;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s, background 0.3s;
+}
+.contact button:hover { transform: scale(1.05); background: #e0e0e0; }
+
+/* Footer */
+footer { text-align: center; padding: 30px; background: #111; color: #ccc; font-size: 0.9em; }
+
+/* Floating Contact Button */
+.float-contact {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #0a74da;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    z-index: 100;
+    transition: transform 0.3s;
+}
+.float-contact:hover { transform: scale(1.1); }
+
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Impulsa tu negocio con tecnología</h1>
+    <p>Desarrollamos sitios web modernos, rápidos y adaptados a tu empresa</p>
+    <a href="#contact" class="cta">¡Contáctanos ahora!</a>
+    <img src="source/92992.jpg" class="hero-img" loading="lazy">
+</header>
+
+<section id="services">
+    <h2>Servicios</h2>
+    <div class="services">
+        <div class="card">
+            <img src="source/corporative_web.jpg" alt="Web Corporativa" loading="lazy">
+            <div class="card-content">
+                <h3>Página Web Corporativa</h3>
+                <p>Diseño responsivo, secciones principales y contacto.</p>
+                <span>$200 – $500</span>
+            </div>
+        </div>
+        <div class="card">
+            <img src="source/9989298_4259666.jpg" alt="Web Avanzada" loading="lazy">
+            <div class="card-content">
+                <h3>Web Avanzada</h3>
+                <p>Incluye blog, SEO básico y secciones dinámicas.</p>
+                <span>$500 – $1,500</span>
+            </div>
+        </div>
+        <div class="card">
+            <img src="source/7915141_3775678.jpg" alt="Tienda Online" loading="lazy">
+            <div class="card-content">
+                <h3>Tienda Online</h3>
+                <p>Catálogo, carrito de compras y pasarela de pago.</p>
+                <span>$800 – $2,500</span>
+            </div>
+        </div>
+        <div class="card">
+            <img src="source/5403084_2786711.jpg" alt="Landing Page" loading="lazy">
+            <div class="card-content">
+                <h3>Landing Page</h3>
+                <p>Página única para campañas o captación de leads.</p>
+                <span>$100 – $300</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="packages">
+    <h2>Paquetes</h2>
+    <div class="packages">
+        <div class="card">
+            <img src="source/10354235_4428861.jpg" alt="Paquete Básico" loading="lazy">
+            <div class="card-content">
+                <h3>Básico</h3>
+                <p>Web corporativa + 1 mes de mantenimiento</p>
+                <span>$300 – $500</span>
+            </div>
+        </div>
+        <div class="card">
+            <img src="source/12291301.jpg" alt="Paquete Completo" loading="lazy">
+            <div class="card-content">
+                <h3>Completo</h3>
+                <p>Web avanzada + SEO + diseño gráfico + mantenimiento 3 meses</p>
+                <span>$1,000 – $2,000</span>
+            </div>
+        </div>
+        <div class="card">
+            <img src="source/10780416_19199697.jpg" alt="Paquete E-commerce" loading="lazy">
+            <div class="card-content">
+                <h3>E-commerce</h3>
+                <p>Tienda online + SEO + integración de pago + capacitación</p>
+                <span>$1,500 – $3,000</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contacto</h2>
+    <p>Escríbenos y te asesoramos sin compromiso</p>
+    <form>
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Correo" required>
+        <textarea placeholder="Mensaje" rows="5" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<a href="#contact" class="float-contact">Contáctanos</a>
+
+<footer>
+    <p>&copy; 2023 Breyner Morales. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+// Hero parallax
+window.addEventListener('scroll', () => {
+    const hero = document.querySelector('.hero-img');
+    hero.style.transform = `translateY(${window.scrollY * 0.3}px)`;
+});
+</script>
+
+</body>
+</html>
