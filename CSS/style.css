@@ -137,3 +137,8 @@ footer { text-align: center; padding: 30px; background: #111; color: #ccc; font-
     transition: transform 0.3s;
 }
 .float-contact:hover { transform: scale(1.1); }
+@media (max-width: 768px) {
+    .box_text{
+        height: 30%;
+    }
+}
